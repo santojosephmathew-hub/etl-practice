@@ -5,3 +5,6 @@ def transform(rows):
 
 def validate(rows):
     return [row for row in rows if row.get("amount") is not None]
+
+def validate(rows):
+    return [row for row in rows if row.get("amount") is not None]
