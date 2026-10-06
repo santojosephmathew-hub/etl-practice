@@ -4,4 +4,4 @@ def transform(rows):
     return rows
 
 def validate(rows):
-    return [row for row in rows if row.get("amount") != ""]
+    return [row for row in rows if row.get("amount") is not None and row.get("amount") != ""]
